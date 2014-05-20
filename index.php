@@ -38,6 +38,9 @@ if( file_exists($page_path) ) {
 	$file_content = file_get_contents($page_path);
 }
 
+if(!is_dir('pages')){
+    mkdir('pages');
+}
 $all_pages = glob("pages/*");
 
 ?>
